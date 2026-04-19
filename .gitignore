@@ -1,0 +1,19 @@
+# Visual Studio
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+x64/
+Debug/
+Release/
+
+# C++ Build
+*.exe
+*.obj
+*.pdb
+*.ilk
+
+# OS
+Thumbs.db
+.DS_Store
