@@ -26,4 +26,4 @@ The simulation follows a standard Monte Carlo pipeline:
 - Documentation and scripts for result visualization.
 
 ---
-*Developed by Ivan [Surname] at the Chair of Aeromechanics, MSU.*
+*Developed by Ivan Platonychev at the Chair of Aeromechanics, MSU.*
