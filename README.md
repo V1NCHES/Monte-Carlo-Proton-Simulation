@@ -1,29 +1,30 @@
-# Monte Carlo Simulation: Hydrogen-Proton Interactions
+# Моделирование взаимодействия атомов водорода и протонов методом Монте-Карло
 
-This repository contains a numerical simulation of the physical interaction between **hydrogen atoms and protons**, implemented using the **Monte Carlo method** in C++.
+Репозиторий содержит реализацию численного моделирования физического взаимодействия между атомами водорода и протонами. Проект выполнен на языке C++ с использованием статистических методов (Монте-Карло).
 
-## 🔬 Physics Overview
-The project models the stochastic nature of atomic interactions, specifically focusing on:
-- Scattering processes and interaction probabilities.
-- Trajectory modeling of particles in a defined physical domain.
-- Statistical analysis of collision events.
+## 🔬 Физическая модель
+Проект направлен на стохастическое моделирование поведения частиц в заданной среде:
+- Расчет вероятностей взаимодействия на основе физических сечений.
+- Моделирование процессов рассеяния.
+- Построение траекторий частиц в расчетной области.
+- Статистический анализ частоты и характера столкновений.
 
-## 🛠 Features
-- **Monte Carlo Engine:** Custom C++ implementation for high-speed stochastic sampling.
-- **Data Analysis:** Integrated Python scripts for post-processing and visualizing simulation results.
-- **Research Background:** Developed as part of coursework at the **Lomonosov Moscow State University** (Mechanical and Mathematical Faculty).
+## 🛠 Технологический стек
+- **C++**: Основной вычислительный код (алгоритмы случайных блужданий, генерация распределений).
+- **Python (NumPy, Matplotlib)**: Скрипты для обработки выходных данных и визуализации результатов (графики распределений, траектории).
+- **Visual Studio**: Среда разработки (проект содержит файл решения `.sln`).
 
-## 📊 Methodology
-The simulation follows a standard Monte Carlo pipeline:
-1. Initialization of particle states (position, velocity).
-2. Stochastic sampling of interaction parameters based on physical cross-sections.
-3. Time-stepping or event-based propagation of particle trajectories.
-4. Convergence analysis and statistical error estimation.
+## 📊 Методология
+Алгоритм моделирования разделен на следующие этапы:
+1. **Инициализация**: Определение начальных координат и векторов скоростей частиц.
+2. **Сэмплирование**: Разыгрывание параметров свободного пробега и углов рассеяния.
+3. **Расчет траекторий**: Итеративное вычисление положений частиц во времени.
+4. **Сбор статистики**: Анализ сходимости метода и расчет средних физических характеристик.
 
-## 📁 Structure
-- `/Monte_Karlo` — Main C++ source code and project files.
-- `Monte_Karlo.sln` — Visual Studio solution for easy building.
-- Documentation and scripts for result visualization.
+## 📁 Структура проекта
+- `/Monte_Karlo` — исходный код на C++.
+- `Monte_Karlo.sln` — файл решения для Visual Studio.
+- Вспомогательные скрипты для визуализации и анализа данных.
 
 ---
-*Developed by Ivan Platonychev at the Chair of Aeromechanics, MSU.*
+*Проект выполнен Иваном Платонычевым в рамках обучения на кафедре аэромеханики Механико-математического факультета МГУ имени М.В. Ломоносова.*
